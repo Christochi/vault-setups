@@ -36,3 +36,9 @@ This creates a role named "my-role" (could be any name). When users generate cre
 - **Generate a new credential by reading from the /creds endpoint with the name of the role:**
 `vault read aws/creds/my-role`
 *Each invocation of the command will generate a new credential*
+
+- **revoke the secret:** 
+`vault lease revoke` with the **lease ID path** that was outputted from vault read when you ran it. Example: 
+```
+vault lease revoke aws/creds/my-role/0bce0782-32a******"
+```
