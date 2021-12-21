@@ -40,5 +40,5 @@ This creates a role named "my-role" (could be any name). When users generate cre
 - **revoke the secret:** 
 `vault lease revoke` with the **lease ID path** that was outputted from vault read when you ran it. Example: 
 ```
-vault lease revoke aws/creds/my-role/0bce0782-32a******"
+vault lease revoke aws/creds/my-role/0bce0782-32a******
 ```
