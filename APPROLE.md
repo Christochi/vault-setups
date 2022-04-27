@@ -18,12 +18,13 @@ vault write auth/approle/role/vault-course \
 ```
 
 #### Steps:
-1. enable approle: `vault auth enable approle` or using a custom path: 
+1. enable approle in default path: `vault auth enable approle` or using a custom path: 
 ```
 vault auth enable -path=vault-course approle
 ```
 2. create policy and role for apps and associate role with the policy: 
 ```
+  vault write auth/<default or custom path>/<role> token_policies="<policyname>"
   vault write auth/approle/role/jenkins token_policies="jenkins-role-policy"
 ```  
 3. get role id which will be used to get username: 
