@@ -1,10 +1,10 @@
 #### Managing Policies Using The CLI 
 `vault policy cmd`. The cmds are:
 - **delete:** `vault policy delete [policy-name]`  
-- **fmt:** `vault policy fmt [policy-name]` 
+- **fmt:** `vault policy fmt [filename]` 
 - **list:** `vault policy list [policy-name]`
 - **read:** `vault policy read [policy-name]`
-- **write:** `vault policy write [policy-name] [path]`
+- **write:** `vault policy write [policy-name] [filename or filepath]`
 
 ***path or directory to place policy is optional***
 
@@ -26,7 +26,7 @@ path "database/creds/dev-db01" {
 }
 
 path "kv/apps/dev-app01" {
-   capabilities = ["create", "read", "update". "delete"]
+   capabilities = ["create", "read", "update", "delete"]
 }
 ```
 
