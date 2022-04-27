@@ -10,7 +10,7 @@ when interacting with CLI, use the "vault auth subcommand". The subcommands are:
 - enable userpass: `vault auth enable userpass`
 - configure username and password: 
 ```
-vault write auth/userpass/users/frank password=vault policies=....
+vault write auth/userpass/users/frank password=vault policies=<policyname>
 ```
 - login using userpass credentials: 
 ```
@@ -20,5 +20,9 @@ vault login -method=userpass username=frank password=vault
 to look at the users that are associated with your userpass method: 
 `vault list auth/userpass/users`
 
-to read the configuration of a particular user: `vault read auth/userpass/users/frank`
+to read the configuration of a particular user: 
+```
+vault read auth/userpass/users/<username>
+vault read auth/userpass/users/frank
+```
 
