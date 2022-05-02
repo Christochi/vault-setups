@@ -6,6 +6,8 @@
 - **read:** `vault policy read [policy-name]`
 - **write:** `vault policy write [policy-name] [filename or filepath]`
 
+`Example: vault policy write unseal policy.hcl`
+
 ***path or directory to place policy is optional***
 
 ***it is optional for policy names to have a `.hcl` extension but it is best practice to use it***
