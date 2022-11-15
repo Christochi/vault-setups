@@ -1,5 +1,5 @@
 #### Configuring Auth Methods Using the CLI
-when interacting with CLI, use the "vault auth subcommand". The subcommands are: enable, disable, list, tune, help
+when interacting with CLI, use the `vault auth <subcommand>`. The subcommands are: enable, disable, list, tune, help
 - `enable`: vault auth enable approle (approle is the type of auth method)
 - `disable`: vault auth disable approle (approle is the path, specifies the path of the obj not type)
 - `list`: vault auth list (easy way to determine which auth method is enabled)
