@@ -41,10 +41,8 @@ vault write -f auth/approle/role/jenkins/secret-id
 ```
 (-f or -force). The result would be a secret_id and secred_id_accessor. The secret_id is used to obtain a password. It changes everytime its read
 
-5. deliver role id to app
-6. deliver secret id to app
-7. app authenticates (logs in) with role id and secret id: (step 5-7)
+5. app authenticates (logs in) with role id and secret id: (step 5-7)
 ```
 vault write auth/approle/login role_id="..." secret_id="..." 
 ```
-8. if the authentication is successful, vault will send back a token to the app
+6. if the authentication is successful, vault will send back a token to the app
