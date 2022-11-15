@@ -6,8 +6,8 @@ when interacting with CLI, use the `vault auth <subcommand>`. The subcommands ar
 - `tune`: used to modify the configuration of an auth method like modifying the default ttl
 - `help`: vault auth help (gives info on how to use the vault auth cmd)
 
-***To see all the info (configuration) related to the role and to know what params (like below) to configure: `vault read auth/approle/role/vault-course`.
-Use "read" to know params you can configure. You configure by doing a "write"***
+***To see all the info (configuration) related to the role and to know what params (like below) to configure: `vault read auth/approle/role/vault-course`. Use "read" to know params you can configure. You configure by doing a "write"***
+
 ```
 vault write auth/approle/role/vault-course \
    secret_id_ttl=10m \
