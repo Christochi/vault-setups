@@ -10,7 +10,9 @@ When running v2 of the kv backend, a key can retain a configurable number of ver
 delete, destroy, enable-versioning, get, list, metadata, patch, put, rollback, undelete
 
 #### Write Data to KV V2 Store:
-`vault kv put [secret-path] key=value` example: `vault kv put foobar-v2/my-secrets password=abc`
+`vault kv put [secret-path] key=value` 
+
+**example**: `vault kv put foobar-v2/my-secrets password=abc`
 
 #### Enable Versioning, upgrade Version KV V1 to V2:
 `vault kv enable-versioning foobar`
