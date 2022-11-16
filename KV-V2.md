@@ -22,7 +22,7 @@ when you write to the path of the upgraded kv store, it will store the data as v
 **"-version=1"**: `vault kv get -version=1 foobar/my-secrets`
 
 #### Delete & Undelete Data in KV Store:
-The latest version of a key can be deleted with the delete command. It also takes a -versions flag to delete prior versions. 
+The latest version of a key can be deleted with the delete command. It also takes a **-versions** flag to delete prior versions. 
 
 When you delete data that is versioned, it does a soft delete. It puts a delete marker in there and does not delete the metadata. The "secret-path could be a v1 or v2
 `vault kv delete -versions=# [secret-path]`
