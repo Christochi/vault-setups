@@ -1,5 +1,5 @@
 #### Managing Policies Using The CLI 
-`vault policy cmd`. The cmds are:
+`vault policy subcommand`. The subcmds are:
 - **delete:** `vault policy delete [policy-name]`  
 - **fmt:** `vault policy fmt [filename]` 
 - **list:** `vault policy list [policy-name]`
@@ -41,7 +41,7 @@ vault token create -policy="policy-name"
 - to know the policy attached to a token: `vault token lookup`
 
  #### ACL Rules Format - KV V2
- Writing and reading versions are prefixed with the `data/ path`.
+ Writing and reading versions are prefixed with the `data/` path.
  
  This policy that worked for the version 1 kv:
  ```
