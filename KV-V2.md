@@ -19,7 +19,7 @@ delete, destroy, enable-versioning, get, list, metadata, patch, put, rollback, u
 
 #### Write & Read from Upgraded KV Store
 when you write to the path of the upgraded kv store, it will store the data as version 2, and to read the previous data stored, use 
-"-version=1": `vault kv get -version=1 foobar/my-secrets`
+**"-version=1"**: `vault kv get -version=1 foobar/my-secrets`
 
 #### Delete & Undelete Data in KV Store:
 The latest version of a key can be deleted with the delete command. It also takes a -versions flag to delete prior versions. 
